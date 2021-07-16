@@ -1,15 +1,14 @@
 import pandas as pd
 import numpy as np
-import keras
 import json
 import pickle
-from keras.applications.resnet50 import ResNet50, preprocess_input, decode_predictions
-from keras.preprocessing import image
-from keras.models import Model, load_model
-from keras.preprocessing.sequence import pad_sequences
-from keras.utils import to_categorical
-from keras.layers import Input, Dense, Dropout, Embedding, LSTM
-from keras.layers.merge import add
+from tensorflow.keras.applications.resnet50 import ResNet50, preprocess_input, decode_predictions
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras.models import Model, load_model
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.utils import to_categorical
+from tensorflow.keras.layers import Input, Dense, Dropout, Embedding, LSTM
+from tensorflow.keras.layers.merge import add
 
 model = load_model("model_weights/model_9.h5")
 model.make_predict_function()
