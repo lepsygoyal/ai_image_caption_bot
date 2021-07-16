@@ -7,6 +7,7 @@ Jinja2==2.11.2
 Keras==2.4.3
 Keras-Preprocessing==1.1.2
 MarkupSafe==1.1.1
+matplotlib==3.2.2
 numpy
 pandas
 pickleshare==0.7.5
