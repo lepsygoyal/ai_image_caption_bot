@@ -1,10 +1,8 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 import keras
 import json
 import pickle
-from keras.applications.vgg16 import VGG16
 from keras.applications.resnet50 import ResNet50, preprocess_input, decode_predictions
 from keras.preprocessing import image
 from keras.models import Model, load_model
